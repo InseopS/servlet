@@ -1,0 +1,14 @@
+
+request 흐름
+client -> http -> servlet container -> 객체
+response 흐름
+객체 -> servlet container -> http -> client
+
+response로 받는 주소엔 context 주소를 담지않게 한다.
+
+context 주소를 포함한 주소는 절대주소,
+context 주소가 빠진 주소는 상대주소다.
+
+한 개의 servlet 내에서 url 중복 선언은 불가하다.
+
+webapp는 rootdirectory 폴더다.
