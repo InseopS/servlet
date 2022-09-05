@@ -1,16 +1,15 @@
+request íë¦„
+client -> http -> servlet container -> ê°ì²´
+response íë¦„
+ê°ì²´ -> servlet container -> http -> client
 
-request Èå¸§
-client -> http -> servlet container -> °´Ã¼
-response Èå¸§
-°´Ã¼ -> servlet container -> http -> client
+responseë¡œ ë°›ëŠ” ì£¼ì†Œì—” context ì£¼ì†Œë¥¼ ë‹´ì§€ì•Šê²Œ í•œë‹¤.
 
-response·Î ¹Þ´Â ÁÖ¼Ò¿£ context ÁÖ¼Ò¸¦ ´ãÁö¾Ê°Ô ÇÑ´Ù.
+context ì£¼ì†Œë¥¼ í¬í•¨í•œ ì£¼ì†ŒëŠ” ì ˆëŒ€ì£¼ì†Œ,
+context ì£¼ì†Œê°€ ë¹ ì§„ ì£¼ì†ŒëŠ” ìƒëŒ€ì£¼ì†Œë‹¤.
 
-context ÁÖ¼Ò¸¦ Æ÷ÇÔÇÑ ÁÖ¼Ò´Â Àý´ëÁÖ¼Ò,
-context ÁÖ¼Ò°¡ ºüÁø ÁÖ¼Ò´Â »ó´ëÁÖ¼Ò´Ù.
+í•œ ê°œì˜ servlet ë‚´ì—ì„œ url ì¤‘ë³µ ì„ ì–¸ì€ ë¶ˆê°€í•˜ë‹¤.
 
-ÇÑ °³ÀÇ servlet ³»¿¡¼­ url Áßº¹ ¼±¾ðÀº ºÒ°¡ÇÏ´Ù.
+webappëŠ” rootdirectory í´ë”ë‹¤.
 
-webapp´Â rootdirectory Æú´õ´Ù.
-
-°´Ã¼, ÆÄÀÏÀº ¹°¸®Àû ÆäÀÌÁö´Â ³í¸®ÀûÀÌ´Ù.
+ê°ì²´, íŒŒì¼ì€ ë¬¼ë¦¬ì  íŽ˜ì´ì§€ëŠ” ë…¼ë¦¬ì ì´ë‹¤.
