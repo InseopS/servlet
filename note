@@ -13,3 +13,11 @@ context 주소가 빠진 주소는 상대주소다.
 webapp는 rootdirectory 폴더다.
 
 객체, 파일은 물리적 페이지는 논리적이다.
+
+html 파일 작성 시 입력화면이면 파일 이름에 in을 넣자.
+
+request는 querystring을 파라메터로 관리, url로 표시
+
+get은 url에 제출한 값이 나오고 post는 url에 노출되지 않는다.
+radio, checkbox는 체크가 된 상태면 기본값 on이 담긴다, 빈 값은 null.
+

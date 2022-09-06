@@ -10,15 +10,15 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/ch01/get/add")
-// Get ÀĞ±â, Post ¾²±â
+// Get ì½ê¸°, Post ì“°ê¸°
 public class C1_Get extends HttpServlet {
 	@Override
-	// doGetÀº servletÀÌ ¹ŞÀº request Å¸ÀÔÀÌ GetÀÌ¸é ÀÛµ¿ÇÑ´Ù.
+	// doGetì€ servletì´ ë°›ì€ request íƒ€ì…ì´ Getì´ë©´ ì‘ë™í•œë‹¤.
 	public void doGet(HttpServletRequest req, HttpServletResponse res) 
 		throws ServletException, IOException {
 			int num1 = 1;
 			int num2 = 2;
-			// response header¿¡ html, utf-8·Î ÀÛ¼ºµÈ °ÍÀÌ¶ó´Â Á¤º¸¸¦ ´ã´Â´Ù.
+			// response headerì— html, utf-8ë¡œ ì‘ì„±ëœ ê²ƒì´ë¼ëŠ” ì •ë³´ë¥¼ ë‹´ëŠ”ë‹¤.
 			res.setContentType("text/html; charset=utf-8");
 			PrintWriter out = res.getWriter();
 			out.println("<h2>GET</h2>");
