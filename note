@@ -23,3 +23,9 @@ radio, checkbox는 체크가 된 상태면 기본값 on이 담긴다, 빈 값은
 
 A include B는 하나의 페이지를 같이 만들고,
 A forward B는 어느 분기로 넘기는지만 관여한다.
+A redirect B는 A -> client -> B -> client 과정을 거친다.
+
+회원가입 -> 메인으로 돌아갈 땐 redirect가 적합하다. (구역이 나뉠 때)
+정상적인 흐림이 아닌 경우도 redirect가 적합하다. (에러로 페이지 돌아갈 때)
+
+jstl JavaServer Pages Standard Tag Library
