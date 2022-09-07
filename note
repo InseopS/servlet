@@ -21,3 +21,5 @@ request는 querystring을 파라메터로 관리, url로 표시
 get은 url에 제출한 값이 나오고 post는 url에 노출되지 않는다.
 radio, checkbox는 체크가 된 상태면 기본값 on이 담긴다, 빈 값은 null.
 
+A include B는 하나의 페이지를 같이 만들고,
+A forward B는 어느 분기로 넘기는지만 관여한다.
