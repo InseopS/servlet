@@ -1,9 +1,8 @@
 <%@ page language='java' contentType='text/html; charset=utf-8' pageEncoding='utf-8' %>
 <%
 	String errMsg = request.getParameter("errMsg");
-	if(errMsg == null) errMsg = "";
 %>
-<form action='siteProc.jsp' method='post'>
+<form action='siteProc.jsp'>
 	<label>다음</label>
 	<input type='radio' name='site' value='https://www.daum.net'/>
 	<label>네이버</label>
