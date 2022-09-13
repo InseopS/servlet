@@ -1,10 +1,10 @@
 <%@ page language='java' contentType='text/html; charset=utf-8' pageEncoding='utf-8' %>
-<%
-	Object errMsg = request.getAttribute("errMsg");
-%>
-<form action='loginProc.jsp'>
-	아이디: <input type='text' name='id'/><br>
-	암　호: <input type='password' name='pw'/><br>
-	<input type='submit'/>
-	<h3 style='color:red'><%= errMsg != null ? errMsg : ""%></h3>
+<form action='loginProc.jsp' method='post'>
+	ID: <input type='text' name='userId'/><br>
+	PW: <input type='password' name='pw'/><br>
+	<button type='submit'>로그인</button>
 </form>
+<%
+	String msg = request.getParameter("msg");
+	if(msg != null) out.println(msg);
+%>

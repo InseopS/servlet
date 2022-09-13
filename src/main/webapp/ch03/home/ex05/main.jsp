@@ -1,22 +1,17 @@
 <%@ page language='java' contentType='text/html; charset=utf-8' pageEncoding='utf-8' %>
 <%
-	if(request.getAttribute("logout") != null) {
+	Object userId = session.getAttribute("userId");
+	if(userId == null) {
 %>
-<%=
-		request.getParameter("msg")
-%>
-<%=
-		request.getAttribute("logout")
-%>
+	<a href='login.jsp'>로그인</a>
 <%
 	} else {
 %>
-		<a href='login.jsp'>로그인</a>
+		<%= userId %>님, 환영합니다. &nbsp;
+		<a href='logout.jsp'>로그아웃</a>
 <%
 	}
 %>
-
-<h2 style='color:blue'><%= request.getAttribute("errMsg") != null ? request.getAttribute("errMsg") : ""%></h2>
 <!-- 
 메인에서 로그인 링크를 누르면 로그인 폼으로 이동한다.
 로그인 폼에서 아이디/암호를 입력하고, 로그인 폼을 제출한다.
