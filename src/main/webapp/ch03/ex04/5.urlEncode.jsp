@@ -2,7 +2,7 @@
 <%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core' %>
 <%@ page import='java.net.URLEncoder' %>
 <%
-	String test = URLEncoder.encode("5.target.jsp?msg=한글", "UTF-8");
-	String text = "dsfsdfsdf";
+	String text = URLEncoder.encode("한글", "UTF-8");
+	String test = "5.target.jsp?msg=" + text; 
 %>
-<c:redirect url=test/>
+<c:redirect url='<%= test %>'/>
