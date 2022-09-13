@@ -8,6 +8,6 @@
 	<label>네이버</label>
 	<input type='radio' name='site' value='https://www.naver.com'/>
 	<br>
-	<input type='submit'>
+	<input type='submit'/>
 	<h3 style='color:red'><%= errMsg != null ? errMsg : ""%></h3>
 </form>
