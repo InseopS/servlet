@@ -3,16 +3,16 @@
 <%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core' %>
 <%
 	String[] products = request.getParameterValues("product");
-		List<String> cart = new ArrayList<>();
-		if(session.getAttribute("cart") != null)
-			cart = (List<String>)session.getAttribute("cart");
+	List<String> cart = new ArrayList<>();
+	
+	if(session.getAttribute("cart") != null)
+		cart = (List<String>)session.getAttribute("cart");
 
-		if(products != null && products.length > 0) {
-			for(String product: products)
-				cart.add(product);
-			
-			session.setAttribute("cart", cart);
-		}
-
+	if(products != null && products.length > 0) {
+		for(String product: products)
+			cart.add(product);
+		
+		session.setAttribute("cart", cart);
+	}
 %>
 <c:redirect url='cartOut.jsp'/>
