@@ -3,15 +3,14 @@
 <a href='main.html'>메인</a>
 <h3>장바구니</h3>
 <%
-	Object cartObj = session.getAttribute("cart");
-
-	if(cartObj != null) {
-		List<String> cart = (List<String>)cartObj;
+	List<String> cart = (List<String>)session.getAttribute("cart");
+	
+	if(cart != null) {		
 		if(cart.size() > 0) {
 %>
 			<ul>
 <%
-				for(String product: cart) {					
+				for(String product: cart) {
 %>
 					<li><%= product %></li>
 <%
