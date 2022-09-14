@@ -23,5 +23,5 @@
 		<button type='submit'>장바구니 삭제</button>
 <%
 		} else out.println("장바구니에 물건이 없습니다.");
-	} else out.println("장바구니가 없습니다.");
+	} else out.println("장바구니에 물건이 없습니다.");
 %>

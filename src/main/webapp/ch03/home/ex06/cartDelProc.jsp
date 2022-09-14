@@ -3,18 +3,15 @@
 <%@ page import='java.util.List, java.util.ArrayList' %>
 <%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core' %>
 <%
-	if(session.getAttribute("cart") != null) {
+	if(session.getAttribute("cart") != null && request.getParameterValues("basketItem") != null) {
 		List<String> cart = (List<String>)session.getAttribute("cart");
 		String[] delList = request.getParameterValues("basketItem");
-		out.println(delList.length);
-		for(int i = 0; i < delList.length; i++)
-		{
-			cart.remove(Integer.parseInt(delList[i]));	
-		}
+		for(int i = delList.length; i > 0; i--)
+			cart.remove(Integer.parseInt(delList[i-1]));
 		
-		session.setAttribute("cart", cart);
+	session.setAttribute("cart", cart);
 %>
-				<c:redirect url='cartOut.jsp'/>
+	<c:redirect url='cartOut.jsp'/>
 <%
-	}
+	} else out.println("잘못된 접근입니다.");
 %>
