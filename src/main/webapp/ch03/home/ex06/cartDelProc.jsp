@@ -6,6 +6,10 @@
 	if(session.getAttribute("cart") != null && request.getParameterValues("basketItem") != null) {
 		List<String> cart = (List<String>)session.getAttribute("cart");
 		String[] delList = request.getParameterValues("basketItem");
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/InseopS/servlet.git
 		for(int i = delList.length; i > 0; i--)
 			cart.remove(Integer.parseInt(delList[i-1]));
 		
