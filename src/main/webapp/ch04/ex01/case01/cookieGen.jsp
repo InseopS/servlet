@@ -4,5 +4,6 @@
 	Cookie cookie1 = new Cookie("name", "john");
 	Cookie cookie2 = new Cookie("age", "12");
 
-	
+	response.addCookie(cookie1);
+	response.addCookie(cookie2);
 %>
