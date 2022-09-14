@@ -7,10 +7,6 @@
 	
 	if(session.getAttribute("cart") != null)
 		cart = (List<String>)session.getAttribute("cart");
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/InseopS/servlet.git
 	if(products != null && products.length > 0) {
 		for(String product: products)
 			cart.add(product);
