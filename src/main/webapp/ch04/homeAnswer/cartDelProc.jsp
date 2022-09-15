@@ -12,7 +12,7 @@
 	String[] products = request.getParameterValues("product");
 	if(products != null && products.length > 0) {
 		for(String product: products)
-			cart = cart.replaceFirst(product, "");
+			cart = cart.replaceFirst(product + "/", "");
 		
 		Cookie cookie = new Cookie("cart", cart);
 		response.addCookie(cookie);
