@@ -4,7 +4,7 @@
 
 <h3>장바구니</h3>
 <%
-	Object cartObj = session.getAttribute("cart");	
+	Object cartObj = session.getAttribute("cart");
 	if(cartObj != null) {
 		List<String> cart = (List<String>)cartObj;
 		if(cart.size() > 0) {
