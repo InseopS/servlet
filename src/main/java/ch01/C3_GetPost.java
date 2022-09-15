@@ -21,16 +21,16 @@ public class C3_GetPost extends HttpServlet {
 			PrintWriter out = res.getWriter();
 			out.println("<h2>GET</h2>");
 			out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2);
-	}
+		}
 	
 	public void doPost(HttpServletRequest req, HttpServletResponse res)
-	throws SecurityException, IOException {
-		int num1 = 1;
-		int num2 = 2;
-		
-		res.setContentType("text/html; charset=utf-8");
-		PrintWriter out = res.getWriter();
-		out.println("<h2>POST</h2>");
-		out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2);
-	}
+		throws SecurityException, IOException {
+			int num1 = 1;
+			int num2 = 2;
+			
+			res.setContentType("text/html; charset=utf-8");
+			PrintWriter out = res.getWriter();
+			out.println("<h2>POST</h2>");
+			out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2);
+		}
 }
