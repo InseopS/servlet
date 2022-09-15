@@ -38,3 +38,5 @@ attribute는 server가 write한다.
 
 attribute name이 같으면 overwrite 한다.
 
+골라담다 = domain과 path가 같은 cookie가 request에 담긴다.
+servlet은 presentation 계층에 해당한다.
