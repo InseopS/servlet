@@ -5,14 +5,14 @@ import ch05.dao.map.EmployeeMap;
 import ch05.domain.Employee;
 
 public class EmployeeDaoImpl implements EmployeeDao {
-	private EmployeeMap employeeMap;
+	private EmployeeMap empMap;
 	
 	public EmployeeDaoImpl() {
-		this.employeeMap = Configuration.getMapper(EmployeeMap.class);
+		this.empMap = Configuration.getMapper(EmployeeMap.class);
 	}
 	
 	@Override
-	public Employee selectEmployee(int employeeId) {		
-		return employeeMap.selectEmployee(employeeId);
+	public Employee selectEmployee(int empId) {		
+		return empMap.selectEmployee(empId);
 	}
 }

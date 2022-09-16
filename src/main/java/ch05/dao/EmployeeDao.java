@@ -3,5 +3,5 @@
 import ch05.domain.Employee;
 
 public interface EmployeeDao {
-	Employee selectEmployee(int employeeId);
+	Employee selectEmployee(int empId);
 }

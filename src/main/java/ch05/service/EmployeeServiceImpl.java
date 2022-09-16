@@ -5,14 +5,14 @@ import ch05.dao.EmployeeDaoImpl;
 import ch05.domain.Employee;
 
 public class EmployeeServiceImpl implements EmployeeService {
-	private EmployeeDao employeeDao;
+	private EmployeeDao empDao;
 	
 	public EmployeeServiceImpl() {
-		this.employeeDao = new EmployeeDaoImpl();
+		this.empDao = new EmployeeDaoImpl();
 	}
 	
 	@Override
-	public Employee getEmployee(int employeeId) {
-		return employeeDao.selectEmployee(employeeId);
+	public Employee getEmployee(int empId) {
+		return empDao.selectEmployee(empId);
 	}
 }

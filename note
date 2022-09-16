@@ -40,3 +40,5 @@ attribute name이 같으면 overwrite 한다.
 
 골라담다 = domain과 path가 같은 cookie가 request에 담긴다.
 servlet은 presentation 계층에 해당한다.
+
+Map 이름은 domain name + Map으로 하자.

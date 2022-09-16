@@ -2,15 +2,9 @@
 <!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
 	'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
 <mapper namespace='ch05.dao.map.EmployeeMap'>
-	<select id='selectEmployee' resultMap='employeeMap'>
-		select employee_id, last_name, hire_date
+    <select id='selectEmployee' resultType='ch05.domain.Employee'>
+		select employee_id empId, last_name empName, hire_date hireDate
 		from employees
-		where employee_id	= #{employeeId}
+		where employee_id	= #{empId}
 	</select>
-	
-	<resultMap id='employeeMap' type='employee'>
-		<id property='employeeId' column='employee_id'/>
-		<result property='lastName' column='last_name'/>
-		<result property='hireDate' column='hire_date'/>
-	</resultMap>
 </mapper>

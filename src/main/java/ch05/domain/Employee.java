@@ -3,12 +3,12 @@
 import java.time.LocalDate;
 
 public class Employee {
-	private int employeeId;
-	private String lastName;
+	private int empId;
+	private String empName;
 	private LocalDate hireDate;
 	
 	@Override
 	public String toString() {
-		return String.format("%d %s %s", employeeId, lastName, hireDate);
+		return empId + ", " + empName + ", " + hireDate;
 	}
 }
