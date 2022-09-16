@@ -42,3 +42,5 @@ attribute name이 같으면 overwrite 한다.
 servlet은 presentation 계층에 해당한다.
 
 Map 이름은 domain name + Map으로 하자.
+
+ch06 - ex01 - 6 예제는 spring에서 사용한다. 
